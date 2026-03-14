@@ -14,7 +14,7 @@ const router = createRouter({
       component: () => import('../views/Gallery.vue')
     }
   ],
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior(to, _from, savedPosition) {
     // If there's a saved position (browser back/forward), use it
     if (savedPosition) {
       return savedPosition

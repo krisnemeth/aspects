@@ -58,24 +58,15 @@ function prev() {
   }, 300)
 }
 
-function goTo(index: number) {
-  if (isTransitioning.value || index === currentIndex.value) return
-  isTransitioning.value = true
-  currentIndex.value = index
-  setTimeout(() => {
-    isTransitioning.value = false
-  }, 300)
-}
-
 // Touch / mouse handlers for main carousel
 function handleTouchStart(e: TouchEvent) {
-  touchStartX.value = e.touches[0].clientX
+  touchStartX.value = e.touches[0]?.clientX ?? 0
   touchEndX.value = 0
   isDragging.value = false
 }
 
 function handleTouchMove(e: TouchEvent) {
-  const current = e.touches[0].clientX
+  const current = e.touches[0]?.clientX ?? touchEndX.value
   touchEndX.value = current
   if (Math.abs(current - touchStartX.value) > 6) {
     isDragging.value = true
@@ -178,10 +169,10 @@ function fsPrev() {
 
 // Touch handlers for fullscreen browsing
 function handleFsTouchStart(e: TouchEvent) {
-  fsTouchStartX.value = e.touches[0].clientX
+  fsTouchStartX.value = e.touches[0]?.clientX ?? 0
 }
 function handleFsTouchMove(e: TouchEvent) {
-  fsTouchEndX.value = e.touches[0].clientX
+  fsTouchEndX.value = e.touches[0]?.clientX ?? fsTouchEndX.value
 }
 function handleFsTouchEnd() {
   if (!fsTouchStartX.value || !fsTouchEndX.value) {
