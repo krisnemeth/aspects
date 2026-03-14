@@ -24,8 +24,7 @@ async function handleSubmit() {
   submitMessage.value = '';
 
   try {
-    // TODO: Connect to Firebase Firestore here
-    // const docRef = await addDoc(collection(db, 'bookings'), formData.value);
+    // TODO: Send via Resend
     console.log('Form data:', formData.value);
     submitMessage.value = 'Thank you! We\'ll be in touch soon.';
     

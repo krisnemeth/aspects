@@ -50,10 +50,9 @@ const headerBgUrl = computed(() => (isDesktop.value ? desktopBgUrl : mobileBgUrl
       <div class="absolute inset-0 bg-black opacity-40 rounded-xl"></div>
       
       <!-- Content (z-index to appear above overlay) -->
-      <div class="relative z-10 flex flex-col items-center justify-center">
-        <div>
-          <iframe class="rounded-xl w-[346px] h-[200px] md:w-[750px] md:h-[400px] shadow-gray-950 shadow-2xl" src="https://www.youtube.com/embed/vhglgDtG3lc?si=8vbKnz3rlGfOVPWR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+      <div class="relative z-10 flex flex-col items-center justify-center gap-4">
+        <iframe class="rounded-xl w-[346px] h-[200px] md:w-[750px] md:h-[370px] shadow-gray-950 shadow-2xl" src="https://www.youtube.com/embed/jquELyqTJLY" title="Aspects - Session_01 music video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="rounded-xl w-[346px] h-[200px] md:w-[750px] md:h-[370px] shadow-gray-950 shadow-2xl" src="https://www.youtube.com/embed/vhglgDtG3lc?si=8vbKnz3rlGfOVPWR" title="Aspects - Session_01 Lyric video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
     </div>
   </SectionWrapper>

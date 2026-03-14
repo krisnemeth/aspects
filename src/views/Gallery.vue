@@ -5,10 +5,14 @@ import Navbar from '../components/Navbar.vue'
 import Footer from '../components/Footer.vue'
 
 const galleryImages = [
-  '/path/to/image1.jpg',
-  '/path/to/image2.jpg',
-  '/path/to/image3.jpg',
-  // Add your image paths here
+  '/img/DSC00157.jpeg',
+  '/img/DSC00174.jpeg',
+  '/img/DSC00209.jpeg',
+  '/img/DSC00269.jpeg',
+  '/img/DSC00299.jpeg',
+  '/img/DSC00342.jpeg',
+  '/img/DSC00435.jpeg',
+  '/img/DSC00627.jpeg',
 ]
 </script>
 
